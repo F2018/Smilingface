@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>笑脸</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500">
+
+    </canvas>
+    <script>
+        var c=document.getElementById("canvas");
+        var cc=c.getContext("2d");
+        cc.beginPath();
+        cc.arc(250,250,200,0,2*Math.PI);
+        cc.stroke();
+
+        cc.beginPath();
+        cc.arc(150,180,50,0,2*Math.PI);
+        cc.stroke();
+
+        cc.beginPath();
+        cc.arc(350,180,50,0,2*Math.PI);
+        cc.stroke();
+
+        cc.beginPath();
+        cc.arc(150,200,30,0,2*Math.PI);
+        cc.fill();
+        cc.stroke();
+
+        cc.beginPath();
+        cc.arc(350,200,30,0,2*Math.PI);
+        cc.fill();
+        cc.stroke();
+
+        cc.beginPath();
+        cc.arc(250,310,50,0,1*Math.PI);
+        cc.stroke();
+
+        cc.moveTo(250,250);
+        cc.lineTo(280,280);
+        cc.stroke();
+
+        cc.moveTo(280,250);
+        cc.lineTo(280,280);
+        cc.stroke();
+
+    </script>
+</body>
+</html>
